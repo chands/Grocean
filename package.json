@@ -1,0 +1,17 @@
+{
+  "name": "shoppingapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Chands",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.26.0"
+  }
+}
