@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grocean | You Order We Deliver!</title>
-  <!-- CSS -->
+  <!-- CSS | Grocery Ocean | Shop @ Home -->
   <link rel="stylesheet" href="./style.css">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,9 +21,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
-  <!-- Front End script -->
+  <!-- Add Products script -->
   <script src="./shop.js"></script>
-  <script src="./index.js"></script>
+  <script src="./add-Products.js"></script>
 </head>
 
 <body>
@@ -72,43 +72,36 @@
     </nav>
   </div>
 
-  <div class="container">
-    <div class="row mx-2 d-flex justify-content-evenly" id="product-list">
-      <!-- sample products -->
-      <div class="col card m-2 p-2">
-        <h4 class="mx-1 product-name">iphone 6s</h4>
-        <div class="product-manufacturer text-muted mx-1">Apple</div>
-        <div class="text-muted mx-1 product-description">64GB storage capacity 4GB RAM</div>
-        <div class="row">
-          <div class="col m-3 p-1 product-price">
-            <b>Rs. 25000</b>
+  <div class="container p4">
+    <h3 class="text-center">Add Products</h3>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-6">
+        <form>
+          <div class="row form-group mb-2">
+            <label for="productName">Product Name</label><br>
+            <input class="col mx-2 p-1" type="text" name="name" id="productName" placeholder="Honey">
           </div>
-          <button class="btn btn-primary col m-3 p-1">Buy</button>
-        </div>
-      </div>
-      <div class="col card m-2 p-2">
-        <h4 class="mx-1 product-name">iphone 7s</h4>
-        <div class="product-manufacturer text-muted mx-1">Apple</div>
-        <div class="text-muted mx-1 product-description">128GB storage capacity 6GB RAM</div>
-        <div class="row">
-          <div class="col m-3 p-1 product-price">
-            <b>Rs. 30000</b>
+          <div class="row form-group mb-2">
+            <label for="productManufacturer">Manufacturer</label><br>
+            <input class="col mx-2 p-1" type="text" name="manufacturer" id="productManufacturer" placeholder="Dabur">
           </div>
-          <button class="btn btn-primary col m-3 p-1">Buy</button>
-        </div>
-      </div>
-      <div class="col card m-2 p-2">
-        <h4 class="mx-1 product-name">iphone 10s</h4>
-        <div class="product-manufacturer text-muted mx-1">Apple</div>
-        <div class="text-muted mx-1 product-description">128GB storage capacity 6GB RAM</div>
-        <div class="row">
-          <div class="col m-3 p-1 product-price">
-            <b>Rs. 40000</b>
+          <div class="row form-group mb-2">
+            <label for="productPrice">Product Price</label><br>
+            <input class="col mx-2 p-1" type="number" name="name" id="productPrice" min="0" placeholder="500">
           </div>
-          <button class="btn btn-primary col m-3 p-1">Buy</button>
-        </div>
+          <div class="row form-group mb-2">
+            <label for="productDescription">Description</label><br>
+            <input class="col mx-2 p-1" type="text" name="description" id="productDescription"
+              placeholder="Honey with No Sugar Adulteration...">
+          </div>
+          <div class="row mx-1 p-1">
+            <button id="reset" class="btn mx-2 col btn-warning" type="reset">Reset</button>
+            <button id="btnAddProduct" class="btn mx-2 col btn-secondary" type="button">Add Product</button>
+          </div>
+        </form>
       </div>
-
+      <div class="col"></div>
     </div>
   </div>
 </body>
